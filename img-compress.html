@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compress your images online for free! Reduce image size without losing quality. Fast, secure, and easy to use.">
+  <meta name="keywords" content="image compressor, compress images, reduce image size, optimize images, free image tools">
+  <meta name="author" content="Your Name">
+  <title>Image Compression Tool - Compress Images Online</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    /* Tool Section */
+    .tool {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin: 40px 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tool:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .tool input[type="file"] {
+      display: none;
+    }
+
+    .tool label.upload-label {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background: #007BFF;
+      color: #fff;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+
+    .tool label.upload-label:hover {
+      background: #0056b3;
+    }
+
+    .tool select {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #007BFF;
+      border-radius: 10px;
+      margin: 20px 0;
+      font-size: 1rem;
+      color: #333;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .tool button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+
+    .tool button:hover {
+      background: #0056b3;
+    }
+
+    .tool .output {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .tool .output img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .tool .output a button {
+      margin-top: 20px;
+      background: #28a745;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 24px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .tool .output a button:hover {
+      background: #218838;
+    }
+
+    /* Ad Sections */
+    .ad {
+      text-align: center;
+      margin: 40px 0;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: #fff;
+      margin-top: 40px;
+      border-radius: 15px 15px 0 0;
+    }
+
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #0056b3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .tool {
+        padding: 20px;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Image Compression Tool</h1>
+      <p>Compress your images online for free! Reduce image size without losing quality.</p>
+    </div>
+  </header>
+
+  <!-- Ad Section (Top) -->
+  <div class="container ad">
+    <!-- Replace with your Google AdSense Ad Unit ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_AD_SENSE_ID"
+     crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-YOUR_AD_SENSE_ID"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Tool Section -->
+  <div class="container tool">
+    <h2>Compress Your Image</h2>
+    <label for="imageInput" class="upload-label">Choose an Image</label>
+    <input type="file" id="imageInput" accept="image/*">
+    <label for="compressionLevel">Compression Level:</label>
+    <select id="compressionLevel">
+      <option value="0.1">Low (Smaller Size, Lower Quality)</option>
+      <option value="0.5" selected>Medium (Balanced Size & Quality)</option>
+      <option value="0.9">High (Larger Size, Higher Quality)</option>
+    </select>
+    <button id="compressBtn">Compress Image</button>
+    <div class="output" id="output">
+      <!-- Compressed image will be displayed here -->
+    </div>
+  </div>
+
+  <!-- Ad Section (Bottom) -->
+  <div class="container ad">
+    <!-- Replace with your Google AdSense Ad Unit ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_AD_SENSE_ID"
+     crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-YOUR_AD_SENSE_ID"
+         data-ad-slot="0987654321"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Image Compression Tool. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Image Compression -->
+  <script>
+    document.getElementById('compressBtn').addEventListener('click', function () {
+      const fileInput = document.getElementById('imageInput');
+      const compressionLevel = parseFloat(document.getElementById('compressionLevel').value);
+      const outputDiv = document.getElementById('output');
+
+      if (fileInput.files.length === 0) {
+        alert('Please select an image to compress.');
+        return;
+      }
+
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function (event) {
+        const img = new Image();
+        img.src = event.target.result;
+
+        img.onload = function () {
+          const canvas = document.createElement('canvas');
+          const ctx = canvas.getContext('2d');
+
+          // Set canvas dimensions
+          canvas.width = img.width;
+          canvas.height = img.height;
+
+          // Draw image on canvas
+          ctx.drawImage(img, 0, 0);
+
+          // Compress image
+          canvas.toBlob(
+            (blob) => {
+              const compressedUrl = URL.createObjectURL(blob);
+              outputDiv.innerHTML = `
+                <h3>Compressed Image</h3>
+                <img src="${compressedUrl}" alt="Compressed Image">
+                <a href="${compressedUrl}" download="compressed-image.jpg">
+                  <button>Download Compressed Image</button>
+                </a>
+              `;
+            },
+            'image/jpeg',
+            compressionLevel
+          );
+        };
+      };
+
+      reader.readAsDataURL(file);
+    });
+  </script>
+</body>
+</html>
