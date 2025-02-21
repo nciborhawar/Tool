@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tools - Image & PDF Utilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .flashing-button {
+            animation: flash 1s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <header class="bg-blue-800 text-white p-5 text-center text-3xl font-bold shadow-lg">
+        Online Tools - Image & PDF Utilities
+    </header>
+    
+    <section class="text-center p-10">
+        <h1 class="text-5xl font-extrabold">Powerful Online Tools</h1>
+        <p class="text-gray-200 mt-2 text-lg">Easily edit images, convert PDFs, and more with our free tools.</p>
+        <button class="mt-4 bg-yellow-400 text-black px-8 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition font-bold flashing-button">Get Started</button>
+    </section>
+    
+    <section class="p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-5 rounded-lg shadow-2xl text-center hover:shadow-2xl transition transform hover:scale-105">
+            <img src="https://via.placeholder.com/150" alt="Tool 1" class="mx-auto mb-3 rounded-lg">
+            <h2 class="text-xl font-bold text-gray-900">Image Compressor</h2>
+            <p class="text-gray-700">Reduce image size without losing quality.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-2xl text-center hover:shadow-2xl transition transform hover:scale-105">
+            <img src="https://via.placeholder.com/150" alt="Tool 2" class="mx-auto mb-3 rounded-lg">
+            <h2 class="text-xl font-bold text-gray-900">PDF to Word</h2>
+            <p class="text-gray-700">Convert PDFs into editable Word documents.</p>
+        </div>
+        <section class="p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <a href="/img-compress.html" class="block bg-white p-5 rounded-lg shadow-2xl text-center hover:shadow-2xl transition transform hover:scale-105">
+        <div class="bg-white p-5 rounded-lg shadow-2xl text-center hover:shadow-2xl transition transform hover:scale-105">
+            <img src="https://via.placeholder.com/150" alt="Tool 1" class="mx-auto mb-3 rounded-lg">
+            <h2 class="text-xl font-bold text-gray-900">Image Compressor</h2>
+            <p class="text-gray-700">Reduce image size without losing quality.</p>
+        </div>
+        </a>
+        <div class="bg-white p-5 rounded-lg shadow-2xl text-center hover:shadow-2xl transition transform hover:scale-105">
+            <img src="https://via.placeholder.com/150" alt="Tool 4" class="mx-auto mb-3 rounded-lg">
+            <h2 class="text-xl font-bold text-gray-900">Merge PDFs</h2>
+            <p class="text-gray-700">Combine multiple PDFs into one file.</p>
+        </div>
+    </section>
+    
+    <section class="text-center p-10">
+        <h2 class="text-3xl font-bold">Example UI</h2>
+        <img src="https://via.placeholder.com/600x300" alt="Example UI" class="mx-auto mt-5 rounded-lg shadow-lg">
+    </section>
+    
+    <footer class="bg-blue-900 text-white text-center p-4 mt-10 text-lg font-semibold">
+        &copy; 2025 Online Tools. All rights reserved.
+    </footer>
+</body>
+</html>
